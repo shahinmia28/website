@@ -1,0 +1,83 @@
+/************************  CONTACT FORM ELEMENTS******************/
+.my-form{
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+.form-1{
+  width: 100%;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+.form-1 input{
+  width: 32%;
+  padding: 15px 10px;
+  border: 1px solid #999;
+  color: #999;
+  outline: none;
+  border-radius: 10px;
+}
+textarea{
+  width: 100%;
+  height: 170px;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid #999;
+  color: #999;
+  outline: none;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.my-form *:required{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 10px 10px;
+}
+.form-3 .btn{
+  border: 1px solid #999;
+  color: #999;
+}
+.form-3 .btn:hover{
+  color: #fff;
+}
+/************* form status = right or wrong ****************/
+#status {
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@media screen and (max-width:900px) {
+  .form-1{
+    display: block;
+    width: 100%;
+  }
+  .form-1 input{
+    width: 100%;
+    margin: 0.75rem 0;
+  }
+}
